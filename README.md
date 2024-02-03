@@ -1,45 +1,43 @@
 # DesignParkingLotSystem
 low-level architecture for a backend system of a smart parking lot
 # 1. Database Model
-# DesignParkingLotSystem
-low-level architecture for a backend system of a smart parking lot
-# 1. Database Model
 #
-# Table vehicles {
-  # vehicle_id integer [primary key]
-  # licenceplate varchar
-  # vehicletype_id integer
-  # entrytime timestamp
-  # exittime timestamp
-  # created_at timestamp
-}
-# Table parkingspots {
-  # parkingspot_id integer [primary key]
-  # floor_id integer
-  # spot_number varchar
-  # size integer
-  # is_available bool
-  # created_at timestamp
-}
-# Table floors {
-  # floor_id integer [primary key]
-  # floortitle varchar
-  # created_at timestamp
-}
-# Table vehicletypes {
-  # vehicletype_id integer [primary key]
-  # vehicletype_name varchar
-  # created_at timestamp
-}
-# Table payments {
-  # payment_id integer [primary key]
-  # vehicle_id integer
-  # parkingspot_id integer
-  # amount integer
-  # is_paid bool
-  # created_at timestamp
-}
-
-<img src='./parkingSlot_DatabaseModel.PNG'/>
-
+Table vehicles {<br>
+  vehicle_id integer [primary key]<br>
+  licenceplate varchar<br>
+  vehicletype_id integer<br>
+  entrytime timestamp<br>
+  exittime timestamp<br>
+  created_at timestamp<br>
+}<br>
+#<br>
+Table parkingspots {<br>
+  parkingspot_id integer [primary key]<br>
+  floor_id integer<br>
+  spot_number varchar<br>
+  size integer<br>
+  is_available bool<br>
+  created_at timestamp<br>
+}<br>
+#<br>
+Table floors {<br>
+  floor_id integer [primary key]<br>
+  floortitle varchar<br>
+  created_at timestamp<br>
+}<br>
+#<br>
+Table vehicletypes {<br>
+  vehicletype_id integer [primary key]<br>
+  vehicletype_name varchar<br>
+  created_at timestamp<br>
+}<br>
+#<br>
+Table payments {<br>
+  payment_id integer [primary key]<br>
+  vehicle_id integer<br>
+  parkingspot_id integer<br>
+  amount integer<br>
+  is_paid bool<br>
+  created_at timestamp<br>
+}<br>
 <img src='./parkingSlot_DatabaseModel.PNG'/>
